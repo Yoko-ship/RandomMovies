@@ -1,0 +1,116 @@
+body{
+    background-color: black;
+}
+.div-us{
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+}
+.span{
+    display: flex;
+    align-items: center;
+}
+.div-us span{
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.images{
+    display: flex;
+
+}
+
+.contacts{
+    text-align: center;
+}
+.contacts span{
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+    
+
+}
+
+.contacts a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid #ccc;
+    padding: 20px;
+    margin-top: 50px;
+}
+form input,form textarea,form button{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+form textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+label{
+    color: white;
+}
+
+input:focus{
+    border-color: black;
+}
+textarea:focus{
+    border-color: black;
+}
+
+.iframe-div{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+
+iframe{
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right,#ff7e5f,#feb47b)1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255,0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+iframe:hover{
+    transform: scale(1.050);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+@media (max-width:1500px){
+    .images{
+        display: block;
+    }
+}
+
+@media (max-width:800px){
+    form{
+        max-width: 300px;
+    }
+}
