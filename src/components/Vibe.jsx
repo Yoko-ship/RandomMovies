@@ -1,3 +1,4 @@
+import Div from "./Div";
 import "./vibeMenu.css"
 import { useState } from "react"
 
@@ -13,6 +14,10 @@ function Vibe(){
     const [romantic,setRomantic] = useState(null);
 
     const [relax,setRelax] = useState(null)
+
+    const [dark,setDark] = useState(null)
+
+    const [happy,setHappy] = useState(null)
 
 
 
@@ -59,8 +64,39 @@ function Vibe(){
         {name:"Зверополис",link:"/vibe/Zootopia",picture:"https://avatars.mds.yandex.net/i?id=e3d45908a6a9155878551385629cffd3_l-5232642-images-thumbs&n=13"},
         {name:"Дневник Бриджит Джонс",link:"/vibe/Bridget Jones's Diary",picture:"https://avatars.mds.yandex.net/i?id=00a602bf7110e1fb6e03e9fc3257c58f_l-7764851-images-thumbs&n=13"},
         {name:"Книжный клуб",link:"/vibe/Book Club",picture:"https://avatars.mds.yandex.net/i?id=7868d5ba58e6c7e4d26be814ed759d4d_l-9989050-images-thumbs&n=13"},
-        {name:"Ешь,молис,люби",link:"/vibe/Eat Pray Love",picture:"https://i.pinimg.com/736x/e2/3f/22/e23f22ad59a5f78c49aff6fb5b638428.jpg"},
-        {name:"Мой ужасный сосед",link:"/vibe/A Man Called Otto",picture:"https://sun1-83.userapi.com/Fyf59gP6AZ0aZX9j7YNi1ZYgCrcUxRLZeE3yhw/oY2er9c23NM.jpg"},
+        {name:"Ешь,молис,люби",link:"/vibe/Eat Pray Love",picture:"https://images.boosty.to/image/f009bc2a-3ceb-4deb-a6fc-32275ab4922d?change_time=1686172675"},
+        {name:"Мой ужасный сосед",link:"/vibe/A Man Called Otto",picture:"https://static.kinoafisha.info/upload/news/977462884337.jpg"},
+        {name:"Невероятная жизнь Уолтера Митти",link:"/vibe/The Secret Life of Walter Mitty",picture:"https://wallpapers.com/images/hd/ben-stiller-in-the-city-6lipzqyij6r2pk24.jpg"},
+        {name:"Шеф",link:"/vibe/Comme un chef",picture:"https://avatars.mds.yandex.net/i?id=624add88a726742fb24da1f0f038faaa_l-5498916-images-thumbs&n=13"},
+        {name:"Полночь в Париже",link:"/vibe/Midnight in Paris",picture:"https://gizmostory.com/wp-content/uploads/2022/01/Midnight-in-Paris-2011-Amazon.jpeg"},
+        {name:"Джули и Джулия: готовим счастье по рецепту",link:"/vibe/Julie & Julia",picture:"https://avatars.mds.yandex.net/i?id=f0371c1d715e67f3109cd277550bb7c0_l-5338775-images-thumbs&n=13"},
+        {name:"Вне игры",link:"/vibe/The Way Back",picture:"https://static.okko.tv/images/v2/10250247?presetId=4000&amp;width=NaN&amp;scale=1&amp;quality=80"},
+    ]
+
+    const darking = [
+        {name:"Джокер",link:"/vibe/Joker",picture:"https://avatars.mds.yandex.net/i?id=702b54d16ecc8a2d9c259984f2f12cee_l-5340565-images-thumbs&n=13"},
+        {name:"Бойцовский клуб",link:"/vibe/Fight Club",picture:"https://vkplay.ru/hotbox/content_files/news/2022/02/03/2c98847f184147f58902188a93fe1c77.jpg"},
+        {name:"Олдбой",link:"/vibe/Oldboy",picture:"https://static.kinoafisha.info/upload/news/354621795534.jpg"},
+        {name:"МАЯК",link:"/vibe/The Lighthouse",picture:"https://static3.coolconnections.ru/images/11484/standard/hd/9e8cf37428b46e77727e1170404d810fb827d56b.jpg?1566574043"},
+        {name:"Американский Психопат",link:"/vibe/American Psycho",picture:"https://avatars.mds.yandex.net/i?id=063b54a948ebbf6af0740f5538d72c46_l-10962086-images-thumbs&n=13"},
+        {name:"Зодиак",link:"/vibe/Zodiac",picture:"https://attuale.ru/wp-content/uploads/2018/12/v487cF9fQkc24HieYoVLg62ekuG.jpg"},
+        {name:"Остров проклятых",link:"/vibe/Shutter Island",picture:"https://avatars.mds.yandex.net/i?id=374763b5123796e514b33ccb0a89575d_l-8257574-images-thumbs&n=13"},
+        {name:"Мученицы",link:"/vibe/Martyrs",picture:"https://s3.afisha.ru/mediastorage/29/b3/b4b3c9e152014a0786c9ba3ab329.jpg"},
+        {name:"Темный Рыцарь",link:"/vibe/Темный рыцарь",picture:"https://vkplay.ru/hotbox/content_files/UgcFile/2024/07/05/2b877cbd961645c9a1bedce9e734ef54.jpg"},
+        {name:"Хранители",link:"/vibe/Watchmen",picture:"https://pic.rutubelist.ru/video/0a/f3/0af3f6ff66ad37547343fe4cd39741cd.jpg"},
+    ]
+
+    const happyness = [
+        {name:"Джуманджи: Зов джунглей",link:"/vibe/Jumanji: Welcome to the Jungle",picture:"https://pic.rutubelist.ru/video/51/73/5173d10c8c2dd0bc7b48b9b412533157.jpg"},
+        {name:"Тупой и ещё тупее",link:"/vibe/Dump and Dumper",picture:"https://static.okko.tv/images/v4/b2acea20-5688-4844-a310-ac676796a751"},
+        {name:"Тачки",link:"/vibe/Cars",picture:"https://avtozvuk-info.ru/wp-content/uploads/2018/07/kadr-iz-multfilma-tachki.jpg"},
+        {name:"Дэдпул",link:"/vibe/Deadpool",picture:"https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/1513264809354-PWDNRNULHJU56KHX8P2E/image-asset.jpeg"},
+        {name:"Дэдпул 2",link:"/vibe/Deadpool 2",picture:"https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/e86ec5b1-3913-48a3-84ba-a1058aa5cb02/1920x"},
+        {name:"Дэдпул и Росомаха",link:"/vibe/Deadpool 3",picture:"https://www.palladium-cinema.com.ua/storage/upload/film/dedpul-i-rosomaha-deadpool-wolverine/55f136c43b819e970c934a626649906193846fbf.jpg"},
+        {name:"Стражи Галактики",link:"/vibe/Guardians of the Galaxy",picture:"https://avatars.mds.yandex.net/i?id=f67d019c8d93bba942e764d23b761e55_l-4012442-images-thumbs&n=13"},
+        {name:"Поймай меня,если сможешь",link:"/vibe/Catch me if you can",picture:"https://avatars.mds.yandex.net/i?id=c649b669d99e85478151c2100d7e8032_l-7743892-images-thumbs&n=13"},
+        {name:"Шрек",link:"/vibe/Shrek",picture:"https://i.playground.ru/p/_qSfWAZxaG8CiVM9Q3VUtA.png"},
+        {name:"Мир Юрского периода",link:"/vibe/Jurassic World",picture:"https://avatars.mds.yandex.net/i?id=ea579616c4b61107b6fd2995d6167717_l-10022975-images-thumbs&n=13"},
     ]
 
 
@@ -86,6 +122,15 @@ function Vibe(){
         return relaxing[randomIndexRelaxing]
     }
 
+    const randomDarking = ()=>{
+        const randomIndexDarking = Math.floor(Math.random() * darking.length);
+        return darking[randomIndexDarking]
+    }
+
+    const randomHappyness =()=>{
+        const randomIndexHappy = Math.floor(Math.random() * happyness.length)
+        return happyness[randomIndexHappy]
+    }
 
     const handleButton = ()=>{
         setInspire(randomHandler());
@@ -116,6 +161,25 @@ function Vibe(){
         setAdventure(null);
         setRomantic(null);
     }
+
+    const handleDarking =()=>{
+        setDark(randomDarking())
+        setInspire(null);
+        setAdventure(null);
+        setRomantic(null);
+        setIsActive(true)
+        setRelax(null)
+    }
+
+    const handleHappyness = ()=>{
+        setHappy(randomHappyness());
+        setDark(null)
+        setInspire(null);
+        setAdventure(null);
+        setRomantic(null);
+        setIsActive(true)
+        setRelax(null)
+    }
    
 
     function closingButton(){
@@ -124,6 +188,12 @@ function Vibe(){
         setAdventure(null);
         setRomantic(null);
         setRelax(null);
+        setDark(null)
+        setInspire(null);
+        setAdventure(null);
+        setRomantic(null);
+        setRelax(null)
+        setHappy(null)
     }
 
 
@@ -147,56 +217,85 @@ function Vibe(){
                     <button onClick={handleAdventure}>Приключенческий</button>
                     <button onClick={handleRomantic}>Романтический</button>
                     <button onClick={handleRelaxing}>Расслабленный</button>
-                    <button>Мрачный</button>
-                    <button>Весёлый</button>
+                    <button onClick={handleDarking}>Мрачный</button>
+                    <button onClick={handleHappyness}>Весёлый</button>
                 </div>
             </div>
 
             {inspire &&(
-            <div className={`card ${isActive ? 'active': ''}`}>
-                    <div className="card-content">
-                        <button onClick={closingButton} className="closed">X</button>
-                        <img src={inspire.picture} alt={inspire.name}/><br/>
-                        <span>{inspire.name}</span>  
-                        <a href={inspire.link} target="_blank" rel="noopener noreferrer"><p>Ссылка</p></a>    
-                    </div>
-            </div>
-
-            
+                <Div 
+                    isActive={isActive}
+                    picture={inspire.picture} 
+                    alt={inspire.name}
+                    name={inspire.name}
+                    link={inspire.link}
+                    closed={closingButton}
+                    handler={handleButton}
+                    handlerNext={handleButton}
+                />
             )}
 
             {adventure &&(
-            <div className={`card ${isActive ? 'active': ''}`}>
-                    <div className="card-content">
-                        <button onClick={closingButton} className="closed">X</button>
-                        <img src={adventure.picture} alt={adventure.name}/><br/>
-                        <span>{adventure.name}</span>  
-                        <a href={adventure.link} target="_blank" rel="noopener noreferrer"><p>Ссылка</p></a>    
-                    </div>
-            </div>
-            
+                <Div 
+                        isActive={isActive}
+                        picture={adventure.picture} 
+                        alt={adventure.name}
+                        name={adventure.name}
+                        link={adventure.link}
+                        closed={closingButton}
+                        handler={handleAdventure}
+                        handlerNext={handleAdventure}
+                    />
             )}
 
             {romantic &&(
-            <div className={`card ${isActive ? 'active': ''}`}>
-                    <div className="card-content">
-                        <button onClick={closingButton} className="closed">X</button>
-                        <img src={romantic.picture} alt={romantic.name}/><br/>
-                        <span>{romantic.name}</span>  
-                        <a href={romantic.link} target="_blank" rel="noopener noreferrer"><p>Ссылка</p></a>    
-                    </div>
-            </div>
+                <Div 
+                    isActive={isActive}
+                    picture={romantic.picture} 
+                    alt={romantic.name}
+                    name={romantic.name}
+                    link={romantic.link}
+                    closed={closingButton}
+                    handler={handleRomantic}
+                    handlerNext={handleRomantic}
+                />
             )}
             
             {relax &&(
-            <div className={`card ${isActive ? 'active': ''}`}>
-                    <div className="card-content">
-                        <button onClick={closingButton} className="closed">X</button>
-                        <img src={relax.picture} alt={relax.name}/><br/>
-                        <span>{relax.name}</span>  
-                        <a href={relax.link} target="_blank" rel="noopener noreferrer"><p>Ссылка</p></a>    
-                    </div>
-            </div>
+                <Div 
+                isActive={isActive}
+                picture={relax.picture} 
+                alt={relax.name}
+                name={relax.name}
+                link={relax.link}
+                closed={closingButton}
+                handler={handleRelaxing}
+                handlerNext={handleRelaxing}
+                />
+            )}
+            {dark && (
+                <Div
+                    isActive={isActive}
+                    picture={dark.picture}
+                    alt={dark.name}
+                    name={dark.name}
+                    link={dark.link}
+                    closed={closingButton}
+                    handler={handleDarking}
+                    handlerNext={handleDarking}
+                />
+            )}
+            {happy &&(
+                <Div
+                    isActive={isActive}
+                    picture={happy.picture}
+                    alt={happy.name}
+                    name={happy.name}
+                    link={happy.link}
+                    closed={closingButton}
+                    handler={handleHappyness}
+                    handlerNext={handleHappyness}
+                />
             )}
         </>
     )

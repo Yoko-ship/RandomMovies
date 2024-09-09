@@ -1,16 +1,19 @@
-body{
+body {
     background-color: black;
 }
-.div-us{
+
+.div-us {
     padding: 20px;
     margin: 10px;
     text-align: left;
 }
-.span{
+
+.span {
     display: flex;
     align-items: center;
 }
-.div-us span{
+
+.div-us span {
     color: white;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
@@ -19,35 +22,38 @@ body{
     display: flex;
     line-height: 1.5;
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
 }
-.images{
+
+.images {
     display: flex;
 
 }
 
-.contacts{
+.contacts {
     text-align: center;
 }
-.contacts span{
+
+.contacts span {
     color: white;
     border: none;
     display: flex;
     justify-content: center;
     text-align: left;
     padding: 10px;
-    
+
 
 }
 
-.contacts a{
+.contacts a {
     text-decoration: none;
     padding-left: 10px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -57,28 +63,34 @@ form{
     padding: 20px;
     margin-top: 50px;
 }
-form input,form textarea,form button{
+
+form input,
+form textarea,
+form button {
     margin-bottom: 15px;
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
-form textarea{
+
+form textarea {
     resize: vertical;
     min-height: 100px;
 }
-label{
+
+label {
     color: white;
 }
 
-input:focus{
-    border-color: black;
-}
-textarea:focus{
+input:focus {
     border-color: black;
 }
 
-.iframe-div{
+textarea:focus {
+    border-color: black;
+}
+
+.iframe-div {
     display: flex;
     justify-content: center;
 
@@ -87,15 +99,16 @@ textarea:focus{
 
 
 
-iframe{
+iframe {
     border: 5px solid transparent;
-    border-image: linear-gradient(to right,#ff7e5f,#feb47b)1;
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b)1;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255,0.3);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
     overflow: hidden;
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-iframe:hover{
+
+iframe:hover {
     transform: scale(1.050);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
 }
@@ -103,14 +116,14 @@ iframe:hover{
 
 
 
-@media (max-width:1500px){
-    .images{
+@media (max-width:1500px) {
+    .images {
         display: block;
     }
 }
 
-@media (max-width:800px){
-    form{
+@media (max-width:800px) {
+    form {
         max-width: 300px;
     }
 }
