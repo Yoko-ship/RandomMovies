@@ -22,16 +22,16 @@ function Vibe(){
 
 
     const inspiring = [
-        {name: "Социальная сеть", link:"/vibe/social-network", picture:"https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/hori/m/mqp5xwmbdyrt3a9.jpg"},
-        {name: "Форрест Гамп", link:"/vibe/forrest-gump", picture:"https://pic.rutubelist.ru/video/5f/b4/5fb460577bc8350bd103b4ab8551b920.jpg"},
-        {name: "Гладиатор", link:"/vibe/gladiator", picture:"https://pic.rutubelist.ru/video/f5/c5/f5c5a7133000fba03b379947e6363753.jpg"},
-        {name: "Интерстеллар", link:"/vibe/interstellar", picture:"https://wallpaper.forfun.com/fetch/9d/9dfa49cd99347c1f21df21d3cf6c1c70.jpeg"},
-        {name: "Чудо", link:"/vibe/Wonder", picture:"https://avatars.mds.yandex.net/i?id=fcf931e27de964c3801aa353deeda62a_l-4254007-images-thumbs&n=13"},
-        {name: "Рокки", link:"/vibe/roccky", picture:"https://avatars.mds.yandex.net/i?id=8b35e6a787cdee9682a02b99ec59f119_l-8496495-images-thumbs&n=13"},
-        {name: "День сурка", link:"/vibe/densurka", picture:"https://avatars.mds.yandex.net/i?id=e16f5165f87945db50831b1149a2a792999ad2bf-4937119-images-thumbs&n=13"},
-        {name: "Стив Джобс", link:"/vibe/steevejobs", picture:"https://wallpaper.forfun.com/fetch/79/79657c1db730c2ff304d78c408d01274.jpeg"},
-        {name: "Кунг-фу Панда", link:"/vibe/kung-fu-panda", picture:"https://avatars.mds.yandex.net/i?id=cfa2604ab0c5ed2e0fb0643d33fe3346_l-8494072-images-thumbs&n=13"},
-        {name: "Собачья жизнь", link:"/vibe/sobachya-jizn", picture:"https://negrowhite.net/uploads/2019/05/larazondeestarcontigo_top_01.jpg"},
+        {name: "Социальная сеть", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/social-network", picture:"https://i.gtimg.cn/qqlive/img/jpgcache/files/qqvideo/hori/m/mqp5xwmbdyrt3a9.jpg"},
+        {name: "Форрест Гамп", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/forrest-gump", picture:"https://pic.rutubelist.ru/video/5f/b4/5fb460577bc8350bd103b4ab8551b920.jpg"},
+        {name: "Гладиатор", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/gladiator", picture:"https://pic.rutubelist.ru/video/f5/c5/f5c5a7133000fba03b379947e6363753.jpg"},
+        {name: "Интерстеллар", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/interstellar", picture:"https://wallpaper.forfun.com/fetch/9d/9dfa49cd99347c1f21df21d3cf6c1c70.jpeg"},
+        {name: "Чудо", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/Wonder", picture:"https://avatars.mds.yandex.net/i?id=fcf931e27de964c3801aa353deeda62a_l-4254007-images-thumbs&n=13"},
+        {name: "Рокки", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/roccky", picture:"https://avatars.mds.yandex.net/i?id=8b35e6a787cdee9682a02b99ec59f119_l-8496495-images-thumbs&n=13"},
+        {name: "День сурка", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/densurka", picture:"https://avatars.mds.yandex.net/i?id=e16f5165f87945db50831b1149a2a792999ad2bf-4937119-images-thumbs&n=13"},
+        {name: "Стив Джобс", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/steevejobs", picture:"https://wallpaper.forfun.com/fetch/79/79657c1db730c2ff304d78c408d01274.jpeg"},
+        {name: "Кунг-фу Панда", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/kung-fu-panda", picture:"https://avatars.mds.yandex.net/i?id=cfa2604ab0c5ed2e0fb0643d33fe3346_l-8494072-images-thumbs&n=13"},
+        {name: "Собачья жизнь", link:"https://yoko-ship.github.io/RandomMovies/#/vibe/sobachya-jizn", picture:"https://negrowhite.net/uploads/2019/05/larazondeestarcontigo_top_01.jpg"},
     ];
 
     const adventuring = [
