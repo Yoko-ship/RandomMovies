@@ -5,8 +5,8 @@ import App from './App';
 
 
 const RouteData = [
-  {path:"/movies/deadpool3",src:"https://rutube.ru/play/embed/1f42612dac697079368f3dbc88a6b7d6/"},
-  {path:"/movies/badguys",src:"https://rutube.ru/play/embed/12ac4ab8ea01c183a97decc7019ea492/"},
+  {path:"https://yoko-ship.github.io/RandomMovies/#/movies/deadpool3",src:"https://rutube.ru/play/embed/1f42612dac697079368f3dbc88a6b7d6/"},
+  {path:"https://yoko-ship.github.io/RandomMovies/#/movies/badguys",src:"https://rutube.ru/play/embed/12ac4ab8ea01c183a97decc7019ea492/"},
   {path:"movies/tihoe-mesto-den-pervyi",src:"https://rutube.ru/play/embed/646d4bfab8ceafb6e01bd01c16dcbf93/"},
   {path:"/movies/smerch-2",src:"https://rutube.ru/play/embed/2dc294faf2ea21a90460f3c85134e8d1/"},
   {path:"/movies/furiosa-hroniki-bezumnogo-maksa",src:"https://rutube.ru/play/embed/208028ef0f49462ce9dbb18460cf2a5f/"},
