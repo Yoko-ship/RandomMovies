@@ -5,7 +5,7 @@ import Grids from "./grids"
     return(
         <>
         <div className='grids'>
-          <Grids image={"https://img1.zonapic.com/images/film_240/1008/1008444.jpg"} name={"Дэдпул и Росомаха"} year={2024} href={"/movies/deadpool3"}/>
+          <Grids image={"https://img1.zonapic.com/images/film_240/1008/1008444.jpg"} name={"Дэдпул и Росомаха"} year={2024} href={"https://yoko-ship.github.io/RandomMovies/#/movies/deadpool3"}/>
           <Grids image={"https://img3.zonapic.com/images/film_240/927/927494.jpg"} name={"Плохие парни до  конца"} year={2024} href={"/movies/badguys"}/>
           <Grids image={"https://img4.zonapic.com/images/film_240/1451/1451347.jpg"} name={"Тихое место:День первый"} year={2024} href={"movies/tihoe-mesto-den-pervyi"}/>
           <Grids image={"https://img3.zonapic.com/images/film_240/5388/5388362.jpg"} name={"Cмерч 2"} year={2024} href={"/movies/smerch-2"}/>
