@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/RandomMovies/static/css/main.683a195a.css",
+    "main.js": "/RandomMovies/static/js/main.8d66d34e.js",
+    "static/media/121902.jpg": "/RandomMovies/static/media/121902.426d41b8657ad53f16e8.jpg",
+    "index.html": "/RandomMovies/index.html",
+    "static/media/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg": "/RandomMovies/static/media/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.fb4cabc3dd433946ff0b50f2c1f39c67.svg",
+    "static/media/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg": "/RandomMovies/static/media/arrow_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.a1651cfac52a66cee5d99401d6856b53.svg",
+    "static/media/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg": "/RandomMovies/static/media/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.5735743d4edb127b53f51d7a9fbe69c5.svg",
+    "main.683a195a.css.map": "/RandomMovies/static/css/main.683a195a.css.map",
+    "main.8d66d34e.js.map": "/RandomMovies/static/js/main.8d66d34e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.683a195a.css",
+    "static/js/main.8d66d34e.js"
+  ]
+}
