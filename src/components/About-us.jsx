@@ -1,12 +1,12 @@
 import './header.css'
-
+import abousUsImage from"./assert/121902.jpg"
 
 function AboutUs(){
     return(
         <>
             <div className='div-us'>
                 <div className='images'>
-                <img src='/121902.jpg'/>
+                <img src={abousUsImage}/>
                 <div className='span'>
                 <span>
 
